@@ -22,6 +22,19 @@ class Bar:
                 raise ValueError(f'{v} must be float and between [0, 1]')
 
 
+# Gredos
+GREDOS = Bar('Gredos', 1.0, 0.5, 1.0, 0.8,
+             0.75, 0.85, 0.9, 1.0, 0.8, 0.9)
+
+plot_utils.plot_pentagon(GREDOS.grades, GREDOS.name)
+
+# Docamar
+DOCAMAR = Bar('Docamar', 1.0, 0.0, 1.0, 0.5,
+              0.5, 0.78, 0.68, 0.3, 0.5, 1.0)
+
+plot_utils.plot_pentagon(DOCAMAR.grades, DOCAMAR.name)
+
+# Puchero de quintana
 PUCHERO_DE_QUINTANA = Bar('Puchero de Quitana', 1.0, 0.7, 1.0, 0.7,
                           0.8, 1.0, 0.9, 0.8, 0.9, 0.8)
 
